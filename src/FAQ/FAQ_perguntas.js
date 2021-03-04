@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../App.css";
 import "./FAQ";
-import APIdata from "./APIdata";
+import APIdata from "./useFAQ_perguntas";
 import Axios from 'axios';
 
 function FAQ_perguntas() {
@@ -17,7 +17,8 @@ function FAQ_perguntas() {
   useEffect(() => {
     Axios.get('https://poc.metasix.solutions/parse/classes/FAQ',
     { headers: {'X-Parse-Application-Id': 'br.com.metasix.poc'}}).then((res) => {
-      console.log(res.data);
+      const APIresponse = (res.data);
+      console.log(APIresponse);
     });
   }, []);
 
@@ -30,8 +31,7 @@ function FAQ_perguntas() {
         <button>Excluir</button>
       </div>
       <div>{toggle ? <input value={resposta}></input> : null}</div>
-      <button onClick={APIdata}>APIteste</button>
-  
+      
     </div>
     
   );

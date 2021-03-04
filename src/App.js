@@ -1,5 +1,7 @@
 import logo from "./images/logo.png";
 import "./App.css";
+import Menu from "./Menu";
+import FAQ from '../src/FAQ/FAQ';
 
 function App() {
   return (
@@ -8,17 +10,9 @@ function App() {
         <img src={logo} />
       </div>
 
-      <div>
-        <button>HOME</button>
-        <button>FAQ</button>
-        <button>LOCAIS</button>
-        <button>CATEGORIA</button>
-      </div>
+      <Menu/>
 
-      <div>
-        <h1>FAQ - Perguntas Frequentes</h1>
-        <input></input>
-      </div>
+      <FAQ/>
       
     </div>
   );

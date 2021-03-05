@@ -1,6 +1,7 @@
 import "../App.css";
 import FAQ_perguntas from "./FAQ_perguntas.js";
 import useFAQ_perguntas from "./useFAQ_perguntas";
+import FAQ_menu from "./FAQ_menu";
 
 function FAQ() {
   const { perguntas } = useFAQ_perguntas();
@@ -12,9 +13,7 @@ function FAQ() {
         <input></input>
       </div>
 
-      <div className="Faq-menu">
-        Pergunta | Nova Pergunta | Ordem | Editar | Excluir
-      </div>
+      <FAQ_menu/>
 
       {perguntas?.map((pergunta) => (
         <div>

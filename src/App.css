@@ -21,8 +21,23 @@
 
 .Faq-menu {
   background-color:#0168B4;
-  border-radius: 15px;
+  border-radius: 5px;
   height: 25px;
+  clear: both;
+  margin: 5px;
+
+}
+
+.Faq-menu-title{
+  float:left;
+  margin-left: 5px;
+}
+
+.Faq-menu-info{
+  margin-right: 5px;
+  float:right;
+  flex-direction: row;
+  display:inline-flex;
 }
 
 .Faq-perguntas {

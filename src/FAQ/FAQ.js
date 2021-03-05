@@ -1,7 +1,10 @@
 import "../App.css";
 import FAQ_perguntas from "./FAQ_perguntas.js";
+import useFAQ_perguntas from "./useFAQ_perguntas";
 
 function FAQ() {
+  const { perguntas } = useFAQ_perguntas();
+
   return (
     <div>
       <div className="Faq-header">
@@ -13,9 +16,15 @@ function FAQ() {
         Pergunta | Nova Pergunta | Ordem | Editar | Excluir
       </div>
 
-      <FAQ_perguntas/>
-
-      
+      {perguntas?.map((pergunta) => (
+        <div>
+          <FAQ_perguntas
+            texto={pergunta.question}
+            resposta={pergunta.answer}
+            ordem={pergunta.position}
+          />
+        </div>
+      ))}
     </div>
   );
 }

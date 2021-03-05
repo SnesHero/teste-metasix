@@ -2,11 +2,11 @@ import "./App.css";
 
 function Menu() {
   return (
-    <div>
-      <button>HOME</button>
-      <button>FAQ</button>
-      <button>LOCAIS</button>
-      <button>CATEGORIA</button>
+    <div className="Menu">
+      <div className="MenuItem">HOME</div>
+      <div className="MenuItem">FAQ</div>
+      <div className="MenuItem">LOCAIS</div>
+      <div className="MenuItem">CATEGORIAS</div>
     </div>
   );
 }

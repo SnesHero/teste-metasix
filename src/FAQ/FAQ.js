@@ -9,11 +9,14 @@ function FAQ() {
   return (
     <div>
       <div className="Faq-header">
-        <h1>FAQ - Perguntas Frequentes</h1>
-        <input></input>
+        <div className="Faq_header_title">FAQ - Perguntas Frequentes</div>
+        <div className="Faq_header_item">
+          <input></input> 
+          <div className="Faq_search_button">BUSCAR</div>
+        </div>
       </div>
 
-      <FAQ_menu/>
+      <FAQ_menu />
 
       {perguntas?.map((pergunta) => (
         <div>

@@ -24,7 +24,7 @@ function FAQ() {
           <FAQ_perguntas
             texto={pergunta.question}
             resposta={pergunta.answer}
-            ordem={pergunta.position}
+            ordem={(pergunta.position + 1)}
           />
         </div>
       ))}

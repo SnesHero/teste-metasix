@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 .App {
   text-align: center;
 }
 
 .App-azul {
-  background-color: #0168B4;
+  background-color: #0168b4;
   border: none;
   max-height: 200 px;
 }
@@ -22,48 +23,55 @@
   margin: 20px;
 }
 
-.MenuItem {
-  background-color:#0168B4;
+.MenuFAQItem {
+  background-color: #0168b4;
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
   cursor: pointer;
   box-shadow: 0px 0px 2px 2px rgb(70, 70, 70);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
+}
+
+.MenuItem {
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px 2px rgb(70, 70, 70);
+  font-family: 'Roboto', sans-serif;
 }
 
 .Faq-header {
   /* display: flex;
   flex-direction: row; */
   /* align-items: center; */
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 50px;
   clear: both;
 }
 
-.Faq_header_title{
+.Faq_header_title {
   float: left;
   font-size: 200%;
-  
-  
 }
 
-.Faq_header_item{
+.Faq_header_item {
   display: flex;
   flex-direction: row;
   float: right;
 }
 
-.Faq_header_input{
+.Faq_header_input {
   max-height: 25px;
   border-radius: 10px;
 }
 
-.Faq_search_button{
+.Faq_search_button {
   background-color: #0168b4;
   border-radius: 5px;
-  margin: 5px; 
+  margin: 5px;
   padding: 5px;
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
@@ -84,7 +92,6 @@
   margin-left: 5px;
   font-family: 'Roboto', sans-serif;
   color: white;
-  
 }
 
 .Faq-menu-info {
@@ -92,12 +99,12 @@
   float: right;
   flex-direction: row;
   display: inline-flex;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
 }
 
 .Faq-perguntas {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   clear: both;
   margin: 10px;
   padding: 20px;
@@ -112,18 +119,18 @@
   display: inline-flex;
   position: relative;
   top: -5px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   /* margin-left: 2px; */
 }
 
 .Edit-icon {
   margin-left: 5px;
-  color:#0168b4;
+  color: #0168b4;
 }
 
-.Trash-icon{
+.Trash-icon {
   margin-left: 5px;
-  color:#DC3545
+  color: #dc3545;
 }
 
 .Titulo-pergunta {
@@ -131,25 +138,26 @@
   position: relative;
   top: -5px;
   cursor: pointer;
+  font-family: 'Roboto', sans-serif;
 }
 
-.Top-buttons{
+.Top-buttons {
   display: flex;
   flex-direction: row;
   float: right;
   color: white;
 }
 
-.Modulos-icon{
+.Modulos-icon {
   margin: 10px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 150%;
-
+  cursor: pointer;
 }
 
-.Pointer{
+.Pointer {
   cursor: pointer;
 }

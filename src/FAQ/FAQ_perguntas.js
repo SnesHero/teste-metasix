@@ -23,7 +23,7 @@ function FAQ_perguntas({ texto, ordem, resposta }) {
           <div className="Trash-icon"><i class="fas fa-trash" ></i></div>
         </div>
       </div>
-      <div>{toggle ? <input value={resposta}></input> : null}</div>
+      <div>{toggle ? <div>{resposta}</div> : null}</div>
     </div>
   );
 }

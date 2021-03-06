@@ -3,29 +3,34 @@
 }
 
 .App-azul {
-  background-color: #0168b4;
+  background-color: #0168B4;
   border: none;
   max-height: 200 px;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 20%;
+  width: 20%;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .Menu {
   display: flex;
   flex-direction: row;
+  margin: 20px;
 }
 
 .MenuItem {
-  background-color: #0168b4;
+  background-color:#0168B4;
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
   cursor: pointer;
-  box-shadow: 0px 0px 2px 2px rgb(71, 71, 71);
+  box-shadow: 0px 0px 2px 2px rgb(70, 70, 70);
   font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 .Faq-header {
@@ -33,7 +38,7 @@
   flex-direction: row; */
   /* align-items: center; */
   font-family: "Roboto", sans-serif;
-  
+  padding: 50px;
   clear: both;
 }
 
@@ -41,13 +46,18 @@
   float: left;
   font-size: 200%;
   
+  
 }
 
 .Faq_header_item{
   display: flex;
   flex-direction: row;
   float: right;
-  
+}
+
+.Faq_header_input{
+  max-height: 25px;
+  border-radius: 10px;
 }
 
 .Faq_search_button{
@@ -65,7 +75,8 @@
   border-radius: 5px;
   height: 25px;
   clear: both;
-  margin: 5px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .Faq-menu-title {
@@ -88,10 +99,10 @@
 .Faq-perguntas {
   font-family: "Roboto", sans-serif;
   clear: both;
-  margin: 5px;
+  margin: 10px;
   padding: 20px;
   height: 10px;
-  box-shadow: 0px 0px 2px 2px rgb(71, 71, 71);
+  box-shadow: 0px 0px 2px 2px rgb(70, 70, 70);
   padding: 10px;
 }
 
@@ -114,34 +125,4 @@
   position: relative;
   top: -5px;
   cursor: pointer;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

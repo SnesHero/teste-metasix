@@ -11,8 +11,9 @@ function FAQ() {
       <div className="Faq-header">
         <div className="Faq_header_title">FAQ - Perguntas Frequentes</div>
         <div className="Faq_header_item">
-          <input></input> 
-          <div className="Faq_search_button">BUSCAR</div>
+          <input className="Faq_header_input"></input> 
+          <div className="Faq_search_button"> <i class="fas fa-search"></i>BUSCAR</div>
+          
         </div>
       </div>
 

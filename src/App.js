@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <div className="App-azul">
-        <img src={logo} />
+        <img className="App-logo" src={logo} />
       </div>
 
       <Menu/>

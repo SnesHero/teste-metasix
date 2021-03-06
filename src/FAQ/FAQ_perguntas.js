@@ -19,8 +19,8 @@ function FAQ_perguntas({ texto, ordem, resposta }) {
         </div>
         <div className="Icones">
           <div className="Icon-item">{ordem}</div>
-          <button className="Icon-item">Editar</button>
-          <button className="Icon-item">Excluir</button>
+          <div className="Edit-icon"> <i class="fas fa-edit" ></i> </div>
+          <div className="Trash-icon"><i class="fas fa-trash" ></i></div>
         </div>
       </div>
       <div>{toggle ? <input value={resposta}></input> : null}</div>
